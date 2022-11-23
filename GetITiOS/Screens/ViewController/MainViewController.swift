@@ -11,15 +11,13 @@ class MainViewController: UIViewController {
 
     private lazy var radarView = RadarView(countCircles: 10, countPlanes: 50)
     
+    // MARK: - Lifecycle
+    
     override func loadView() {
         super.loadView()
         addViews()
         configureLayout()
         configureAppearance()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
     
     // MARK: - Private
